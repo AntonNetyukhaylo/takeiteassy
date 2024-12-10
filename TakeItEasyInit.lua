@@ -10,6 +10,7 @@ frame:SetScript("OnEvent", function(_, event, ...)
         addonTable.InitBD(_, event, ...)
     elseif event == "UNIT_HEALTH" then
         addonTable.CheckDancingInTheMoonlight()
+        addonTable.HoldMeTight()
     end
 end)
 

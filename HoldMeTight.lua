@@ -3,7 +3,7 @@ local soundPlayedThisFight = false -- Змінна для відстеження
 
 
 -- Локальна функція для перевірки стану групи
-function addonTable.CheckDancingInTheMoonlight()
+function addonTable.HoldMeTight()
     local isInGroup = IsInGroup()
     local isInRaid = IsInRaid()
 
