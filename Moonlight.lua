@@ -28,9 +28,14 @@ function addonTable.CheckDancingInTheMoonlight()
     local deadPercent = (deadCount / numMembers) * 100
 
     if deadPercent >= TakeItEasyDB.deathAmount and not soundPlayedThisFight then
-        -- Програємо звук, якщо його ще не грали за бій
+
         soundPlayedThisFight = true
-        PlaySoundFile("Interface/AddOns/MemePack/sounds/Dancing_in_the_moonlight.mp3", "Master")
+        if TakeItEasyDB.playingNow then
+            StopSound(TakeItEasyDB.playingNow)
+            TakeItEasyDB.playingNow = nil
+        end
+
+        _, TakeItEasyDB.playingNow = PlaySoundFile("Interface/AddOns/takeiteasy/sounds/Dancing_in_the_moonlight.mp3", "Master")
 
         -- Виводимо повідомлення в чат
         print("|cffff0000Warning: 50% of your group is dead!|r")
