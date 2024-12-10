@@ -1,0 +1,10 @@
+## Interface: 110005
+## Title: TakeItEasy
+## Notes: Якщо частина паті помирає, то починає грати фрагмент пісні Toploader - Dancing in the Moonlight, щоб підняти настрій)
+## Author: Pelfox
+## Version: 1.0
+## SavedVariables: TakeItEasyDB
+
+TakeItEasyDB.lua
+Moonlight.lua
+TakeItEasyInit.lua
