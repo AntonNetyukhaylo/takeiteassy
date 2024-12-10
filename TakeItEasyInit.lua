@@ -20,12 +20,12 @@ SlashCmdList["TAKEITEASY"] = function(msg)
 
     if value then
         if value >= 1 and value <= 100 then
-            MemePackDB.deathAmount = value
+            TakeItEasyDB.deathAmount = value
             print("Кількість смертей встановлено: ", value)
         else
             print("Треба вказувати значення від 1 до 100")
         end
     else
-        print("Ви не вказали значення для кількості смертей. Поточна кількість: ",  MemePackDB.deathAmount)
+        print("Ви не вказали значення для кількості смертей. Поточна кількість: ",  TakeItEasyDB.deathAmount)
     end
 end

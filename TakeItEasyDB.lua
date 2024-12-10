@@ -1,6 +1,7 @@
 local _, addonTable = ...
 local defaults = {
-    deathAmount = 50
+    deathAmount = 50, -- Скільки % групи має померти
+    tankHpAmount = 20 -- Скільки % хп має бути у танка для програшу музики
 }
 
 function addonTable.InitBD(self, _, name)

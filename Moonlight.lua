@@ -27,7 +27,7 @@ function addonTable.CheckDancingInTheMoonlight()
 
     local deadPercent = (deadCount / numMembers) * 100
 
-    if deadPercent >= MemePackDB.deathAmount and not soundPlayedThisFight then
+    if deadPercent >= TakeItEasyDB.deathAmount and not soundPlayedThisFight then
         -- Програємо звук, якщо його ще не грали за бій
         soundPlayedThisFight = true
         PlaySoundFile("Interface/AddOns/MemePack/sounds/Dancing_in_the_moonlight.mp3", "Master")
