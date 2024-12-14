@@ -2,7 +2,7 @@
 ## Title: TakeItEasy
 ## Notes: Адон спрямований на розважальну частину при проходжені ключів чи рейдів
 ## Author: Pelfox
-## Version: 1.02
+## Version: 1.03
 ## SavedVariables: TakeItEasyDB
 
 TakeItEasyDB.lua
