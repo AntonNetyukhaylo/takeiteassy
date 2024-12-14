@@ -1,11 +1,11 @@
 local _, addonTable = ...
-local tanks = {}
 
 local lastExecutionTime = 0 -- Змінна для збереження часу останнього запуску
 local cooldown = 5 -- Час у секундах між запусками
 
 -- Локальна функція для перевірки стану групи
 function addonTable.HoldMeTight()
+    local tanks = {}
     local currentTime = GetTime() -- Отримуємо поточний час
     local isInGroup = IsInGroup()
     local isInRaid = IsInRaid()
